@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,th,td,tbody,thead {
+            border: 1px solid;
+            border-collapse: collapse;
+            font-family: Arial,Helvetica,sans-serif;
+        }
+  
+        th,td{
+            height: 3rem;
+            width: 8rem;
+            text-align: center;
+        }
+
+        #delete{
+            border: none;
+            background-color: red;
+            color: white;
+            padding: 5px;
+            border-radius: 10px;
+        }
+  
+        th{
+            background: #898989;
+            border: 1px solid #898989;
+            color: white;
+        }
+      </style>
+</head>
+<body>
+    <!-- A button which clicked opens the database, if it doesnt then it shows an error -->
+    <button id="open">Click Me to open the database</button>
+    <hr />
+    <!-- Write the note here -->
+    <input type="text" >
+    <!-- Use this button to save the note which has been written by the user and store it in objectstore of database -->
+    <!-- Also if the database hasnt been created/opened yet, then show an error -->
+    <button id="add">Add Note</button>
+    <hr />
+
+    <button id="view" data-open="false">View Notes</button>
+
+    <table></table>
+
+    <script src="script.js"></script>
+</body>
+</html>
